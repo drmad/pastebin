@@ -15,7 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from paste.views import crear
+
+
+#paste.views.Reporte()
+
+#import django
+#djang.conf.urls.url()
+
+
 
 urlpatterns = [
+    
+    url(r'^paste/',crear,name='paste'),
     url(r'^admin/', admin.site.urls),
 ]

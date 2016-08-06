@@ -6,3 +6,5 @@ class reporte (models.Model):
     cuerpo = models.TextField()
     fecha  = models.DateTimeField()
     # Yay
+    
+    
