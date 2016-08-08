@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from .forms import ArticuloForm
 from django.http import HttpResponseRedirect
-from django.core.context_processors import csrf
+from django.template.context_processors import csrf
 
 # Create your views here.
 
