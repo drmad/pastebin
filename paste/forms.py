@@ -4,6 +4,6 @@ from .models import reporte
 class ArticuloForm(forms.ModelForm):
     class Meta:
         model = reporte
-        fields = '__all__'
+        fields = ['cuerpo']
          
  

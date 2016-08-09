@@ -17,7 +17,7 @@ def crear(request):
         if form.is_valid():
             form.save()
 
-            return HttpResponseRedirect('/')
+            return HttpResponseRedirect('/crear')
     else:
         form = ArticuloForm()
 

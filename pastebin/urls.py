@@ -27,6 +27,7 @@ from paste.views import crear
 
 urlpatterns = [
     
+    url(r'^crear/',crear,name='crear'),
     url(r'^paste/',crear,name='paste'),
     url(r'^admin/', admin.site.urls),
 ]
