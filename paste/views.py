@@ -38,6 +38,7 @@ def crear(request):
 def mostrar(request , codigo):
 
 
+
     form = ArticuloForm(request.POST)
     if request.POST:
         form = ArticuloForm()
@@ -52,6 +53,9 @@ def mostrar(request , codigo):
 
         r = reporte.objects.get(codigo=codigo)
 
+
+    r = reporte.objects.get(codigo=codigo)
+#agregar  lo del pastebin 
 
     return render (request,'hola.html', {'reporte': r})
 
