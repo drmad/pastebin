@@ -9,5 +9,12 @@ class reporte (models.Model):
 
     # Yay
     def __str__(self):
+    	#codigo = hashlib.md5(str(self.id)).hexdigest()[:5]
+    	
     	return str(self.cuerpo[0:10])
+
+
+
+
+
     

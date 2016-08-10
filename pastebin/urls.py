@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from paste.views import crear
+from paste.views import mostrar
 
 
 #paste.views.Reporte()
@@ -25,9 +26,11 @@ from paste.views import crear
 
 
 
+
 urlpatterns = [
+
     
-    url(r'^crear/',crear,name='crear'),
-    url(r'^paste/',crear,name='paste'),
+    url(r'^([0-9a-f]{5})$',mostrar,name="must"),
+    url(r'^$',crear),
     url(r'^admin/', admin.site.urls),
 ]
