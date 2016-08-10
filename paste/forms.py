@@ -5,5 +5,3 @@ class ArticuloForm(forms.ModelForm):
     class Meta:
         model = reporte
         fields = ['cuerpo']
-         
- 

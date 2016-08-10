@@ -37,7 +37,20 @@ def crear(request):
 
 def mostrar(request , codigo):
 
-    r = reporte.objects.get(codigo=codigo)
+
+    form = ArticuloForm(request.POST)
+    if request.POST:
+        form = ArticuloForm()
+ 
+        #args = {}
+        #args.update(csrf(request))
+ 
+        #args['form'] = form
+            
+        return HttpResponseRedirect('create') 
+    else:    
+
+        r = reporte.objects.get(codigo=codigo)
 
 
     return render (request,'hola.html', {'reporte': r})

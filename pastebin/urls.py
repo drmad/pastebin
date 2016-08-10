@@ -31,6 +31,6 @@ urlpatterns = [
 
     
     url(r'^([0-9a-f]{5})$',mostrar,name="must"),
-    url(r'^$',crear),
+    url(r'^$',crear,name="create"),
     url(r'^admin/', admin.site.urls),
 ]
