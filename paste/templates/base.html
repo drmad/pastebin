@@ -1,0 +1,30 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pastebin</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/paste.css' %}">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+    <header>
+    Teh Awesome Pastebin
+    </header>
+
+    <section><div class="container">
+    {% block content %}
+    {% endblock %}
+    </div>
+
+    <!-- footer -->
+    <footer><div class="container">
+    Pastebin creado por Gerson, con un poco de <br />
+    trauma psicomotriz cortesía de <a href="http://drmad.org" target="_blank">Oliver Etchebarne</a>.
+    </div></footer>
+
+</body>
+</html>
